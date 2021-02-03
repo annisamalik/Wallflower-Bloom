@@ -1,123 +1,345 @@
 <!DOCTYPE html>
+<html>
 
-<html lang="en" itemscope itemtype="http://schema.org/WebPage"> <!--Change the lang property to your web"s language-->
+<head>
+    <title>Wallflower Bloom</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/css/all.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <script> 
+        $(function(){
+          $("#includedContent").load("index.html"); 
+        });
+    </script> 
+</head>
 
-	<head prefix="og: http://ogp.me/ns#">
+<body>
+    <nav class="none">
+        <img src="assets/image/logo.png" style="height:60px; width:auto" class="judul" alt="sejarah" onclick="document.getElementsByClassName('top')[0].scrollIntoView()">
+        <ul>
+            <li>
+                <a href="#story">Story</a>
+            </li>
+            <li>
+                <a href="#back">Background</a>
+            </li>
+            <li>
+                <a href="#character">Character</a>
+            </li>
+            <li>
+                <a href="#game">Demo</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+            <li>
+                <button onclick="changeTheme()">
+                    <i class="fas fa-moon" style="color: #ff00d4;"></i>
+                </button>
+            </li>
+           
+        </ul>
+        <button class="icon" onclick="showMenu()">
+            <i class="fa fa-bars"></i>
+        </button>
+    </nav>
+    <header>
+       
+        <div class="top">
+            <div class="dialogbox back">
+            <p class="line-1 anim-typewriter"> have you ever question what it means to be alive?</p>
+        </div>
+            <button class="play-btn" onclick="document.getElementById('game').scrollIntoView()">
+               Play It Now
+            </button>
+        </div>
 
-		<title>Monogatari Visual Novel</title> <!--Up to 60-70 Characters. Optimal Format: Primary Keyword - Secondary Keyword | Brand Name-->
 
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
-		<meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; script-src 'self' 'unsafe-eval'">
-		<meta name="description" content=""> <!--Page description. No longer than 155 characters.-->
-		<meta name="keywords" content="">
-		<meta name="author" content=""> <!--Name of the author.-->
+    </header>
 
-		<!--Facebook Meta Tags-->
-		<meta property="og:image" content="http://" /> <!--URL of Image to show-->
-		<meta property="og:description" content="" /> <!--Page Description-->
-		<meta property="og:site_name" content="" /> <!--The Name Here-->
-		<meta property="og:url" content="http://" /> <!--The Web main URL-->
-		<meta property="og:title" content="" /> <!--The Title Here-->
+    <main>
+        <div>
+            <article id="story" class="card2">
+                <div class="big gap">Story</div>
+                <div class="flex-container">
+                    <p style="flex-basis: 40%; display: relative; transform: translate(25%, 50px); font-size: 16px;z-index: 4;font-family: 'Nanum Pen Script', cursive; font-size: 24px;">
+                        Crissa is a recluse, most of her life has been spent avoiding people.</br>
+                        </br>Waiting for situation to be better, years after years nothing absolutely change.
+                    </p>
 
-		<!--Google Meta Tags-->
-		<meta itemprop="name" content=""> <!--The Name or Title Here-->
-		<meta itemprop="description" content=""> <!--Page Description-->
-		<meta itemprop="image" content="http://"> <!--URL of Image to show-->
 
-		<!--Twitter Meta Tags - You"ll have to validate your website here: https://dev.twitter.com/docs/cards/validation/validator-->
-		<meta name="twitter:card" content="summary_large_image"> <!--Content Card Type-->
-		<meta name="twitter:domain" content=""> <!--Your web"s domain-->
-		<meta name="twitter:site" content="@"> <!--@publisher-->
-		<meta name="twitter:title" content=""> <!--Page Title-->
-		<meta name="twitter:description" content=""> <!--Page description less than 200 characters-->
-		<meta name="twitter:creator" content="@"> <!--@author-->
-		<meta name="twitter:image:src" content="http://"> <!--URL of Image to show-->
+                    <img src="assets/image/perpus.jpg" class="featured-image" style="flex-basis: 60%;display: relative; transform: translate(-10%, 0);">
+                </div>
+                <div>
+                    <h3 style="margin: 50px 0;">What's in this game?</h3>
+                    <div class="feature-container" style="justify-content: center;">
+                        <div class="game-feature">10 hours play game</div>
+                        <div class="game-feature">Play Mini Game</div>
+                        <div class="game-feature">See through another perspective</div>
+                        <div class="game-feature">Plan your university life</div>
+                        <div class="game-feature">Find your interest</div>
+                        <div class="game-feature">Find your value in life</div>
+                    </div>
+                </div>
+               
+            </article>
+            <article id="back">
+                <div class="fs-section">
+                    <div class="fs-container w-container">
+                        <div class="big gap" style="text-align: center; margin-left: 0; margin-right: 0; color: white;">
+                           Background
+                        </div>
 
-		<!--Android Meta Tags-->
-		<meta name="mobile-web-app-capable" content="yes">
-		<link rel="icon" sizes="192x192" href="assets/icons/icon_192x192.png"> <!--192 x 192 Icon-->
-		<link rel="icon" sizes="128x128" href="assets/icons/icon_128x128.png"> <!--128 x 128 Icon-->
+                            <div class="fs-world-img _1 modalbtn"></div>
+                            <div class="fs-world-img _2 modalbtn"></div>
+                            <div class="fs-world-img _3 modalbtn"></div>
+                            <div class="fs-world-img _4 modalbtn"></div>
+                            <div class="fs-world-img _5 modalbtn"></div>
+                            <div class="fs-world-img _6 modalbtn"></div>
+                            <div class="fs-world-img _7 modalbtn"></div>
+                            <div class="fs-world-img _8 modalbtn"></div>
+                        
+                    </div>
+                    <div class="fs-world-bg">
+                        <img src="./assets/image/world/126224949387516216028_BG36a_80.jpg" alt="" class="fs-world-bg-img">
+                    </div>
+                </div>
+                <!-- Background Details -->
+                <div class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content background">
+                        <span class="close">&times;</span>                   
+                        <img src="./assets/image/world/128235707683116114934_BG41c.jpg"/>
+                    </div>
+                </div>
+                <div class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content background">
+                        <span class="close">&times;</span>                   
+                        <img src="./assets/image/world/BG00b1_80.jpg"/>
+                    </div>
+                </div>
+                <div class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content background">
+                        <span class="close">&times;</span>                   
+                        <img src="./assets/image/world/128491350898216102725_BG42a.jpg"/>
+                    </div>
+                </div>
+                <div class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content background">
+                        <span class="close">&times;</span>                   
+                        <img src="./assets/image/world/129247956548116104261_BG43a.jpg"/>
+                    </div>
+                </div>
+                <div class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content background">
+                        <span class="close">&times;</span>                   
+                        <img src="./assets/image/world/bg20d.jpg"/>
+                    </div>
+                </div>
+                <div class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content background">
+                        <span class="close">&times;</span>                   
+                        <img src="./assets/image/world/128415240477116128830_BG39b.jpg"/>
+                    </div>
+                </div>
+                <div class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content background">
+                        <span class="close">&times;</span>                   
+                        <img src="./assets/image/world/BG11b_80.jpg"/>
+                    </div>
+                </div>
+                <div class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content background">
+                        <span class="close">&times;</span>                   
+                        <img src="./assets/image/world/BG28b_80.jpg"/>
+                    </div>
+                </div>
+               
+            </article>
+            <article id="character" class="card2">
+                <div class="big gap w3-container w3-center w3-animate-bottom">Character</div>
+                <div class="flex-container">
+                    <div class="character">
+                        <div class="square">
+                            <div class="pic modalbtn" style="background: url(assets/image/cha3-s.png);background-size:cover">
+                            </div>
+                        </div>
+                        <div class="namebox">
+                            <img src="assets/image/namebox.png" class="featured-image" style="width: 300px;">
+                            <div class="centered">Annisa</div>
+                        </div>
+                    </div>
+                    <div class="character">
+                        <div class="square">
+                            <div class="pic modalbtn" style="background: url(assets/image/cha1.png);background-size:cover">
+                            </div>
+                        </div>
+                        <div class="namebox">
+                            <img src="assets/image/namebox.png" class="featured-image" style="width: 300px;">
+                            <div class="centered">Annisa</div>
+                        </div>
+                    </div>
+                    <div class="character">
+                        <div class="square">
+                            <div class="pic modalbtn" style="background: url(assets/image/cha2-s.png);background-size:cover"></div>
+                        </div>
+                        <div class="namebox">
+                            <img src="assets/image/namebox.png" class="featured-image" style="width: 300px;">
+                            <div class="centered">Annisa</div>
+                        </div>
+                        
+                    </div>
+                    <div class="character">
+                        <div class="square">
+                            <div class="pic modalbtn" style="background: url(assets/image/cha4-s.png);background-size:cover">
+                            </div>
+                        </div>
+                        <div class="namebox">
+                            <img src="assets/image/namebox.png" class="featured-image" style="width: 300px;">
+                            <div class="centered">Annisa</div>
+                        </div>
+                    </div>
 
-		<!--Apple Meta Tags-->
-		<meta name="apple-mobile-web-app-title" content=""> <!--App Title or Name-->
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!--Styling for the iOS Status Bar-->
-		<link rel="apple-touch-icon" href="assets/icons/icon_60x60.png"> <!--60 x 60 Icon-->
-		<link rel="apple-touch-icon" sizes="76x76" href="assets/icons/icon_76x76.png"> <!--76 x 76 Icon-->
-		<link rel="apple-touch-icon" sizes="120x120" href="assets/icons/icon_120x120.png"> <!--120 x 120 Icon-->
-		<link rel="apple-touch-icon" sizes="152x152" href="assets/icons/icon_152x152.png"> <!--152 x 152 Icon-->
-		<link rel="apple-touch-icon" sizes="152x152" href="assets/icons/icon_167x167.png"> <!--167 x 167 Icon-->
-		<link rel="apple-touch-icon" sizes="152x152" href="assets/icons/icon_180x180.png"> <!--180 x 180 Icon-->
 
-		<!--Microsoft Tags-->
-		<meta name="msapplication-TileColor" content=""> <!--Color of the tile on Windows. In hexadecimal format-->
-		<meta name="application-name" content="" /> <!-- App Title -->
-		<meta name="msapplication-tooltip" content="" /> <!--Small text on hover-->
-		<meta name="msapplication-starturl" content="http://" /> <!-- URL to start in -->
-		<meta name="msapplication-square70x70logo" content="assets/icons/icon_70x70.png" /> <!--Image for Tile 70x70-->
-		<meta name="msapplication-square150x150logo" content="assets/icons/icon_150x150.png" /> <!--Image for Tile 150x150-->
-		<meta name="msapplication-wide310x150logo" content="assets/icons/icon_310x150.png" /> <!--Image for Tile 310x150-->
-		<meta name="msapplication-square310x310logo" content="assets/icons/icon_310x310.png" /> <!--Image for Tile 310x310-->
+                </div>
+                <!-- Character Details -->
+                <div class="modal">
 
-		<!--<link rel="publisher" href=""> Publisher"s Google+ URL-->
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="flex-container">
+                            <img src="./assets/image/cha3.png"/>
+                            <div style="display: block; text-align: center; width: 100%;">
+                                <div class="big">Ani</div>
+                                <p class="descbox">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                               
+                            </div>
 
-		<meta name="theme-color" content=""><!--Theme color for browsers in hexadecimal format.-->
+                        </div>
+                    </div>
+                </div>
+                <div class="modal">
 
-		<link rel="shortcut icon" href="favicon.ico" /> <!--Favicon. Good tool for creating one: http://xiconeditor.com/ Create all sizes.-->
-		<!--<link rel="canonical" href=""> Canonical URL of your webpage-->
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="flex-container">
+                            <img src="./assets/image/cha1.png"/>
+                            <div style="display: block; text-align: center; width: 100%;">
+                                <div class="big">Ani</div>
+                                <p class="descbox">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                               
+                            </div>
 
-		<link rel="manifest" href="manifest.json">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal">
 
-		<!-- Third Party CSS Libraries -->
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="flex-container">
+                            <img src="./assets/image/cha2.png"/>
+                            <div style="display: block; text-align: center; width: 100%;">
+                                <div class="big">Ani</div>
+                                <p class="descbox">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                               
+                            </div>
 
-		<!-- Monogatari CSS Libraries -->
-		<link rel="stylesheet" href="./engine/core/monogatari.css">
-		<link rel="stylesheet" href="./style/main.css">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal">
 
-		<!-- Third Party JavaScript Libraries -->
-		<script src="./js/vendor/jquery.min.js"></script>
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="flex-container">
+                            <img src="./assets/image/cha4.png"/>
+                            <div style="display: block; text-align: center; width: 100%;">
+                                <div class="big">Ani</div>
+                                <p class="descbox">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                               
+                            </div>
 
-		<!-- Monogatari JavaScript Libraries -->
-		<script src="./engine/debug/debug.js"></script>
-		<script src="./engine/core/monogatari.js"></script>
-		<script src="./js/options.js"></script>
-		<script src="./js/storage.js"></script>
-		<script src="./js/script.js"></script>
-		<script src="./js/main.js"></script>
-
-	</head>
-
-	<body>
-
-		<!-- Fallback when JavaScript is not available -->
-		<noscript>
-			<div class="middle text--center">
-				<h2>JavaScript Disabled or not Supported.</h2>
-				<small>To play this game, please enable JavaScript executing or use a different browser.</small>
-			</div>
-		</noscript>
-
-		<div id="monogatari">
-			<visual-novel>
-				<language-selection-screen></language-selection-screen>
-				<loading-screen></loading-screen>
-				<main-screen>
-					<main-menu></main-menu>
-				</main-screen>
-				<game-screen>
-					<dialog-log></dialog-log>
-					<text-box></text-box>
-					<quick-menu></quick-menu>
-				</game-screen>
-				<gallery-screen></gallery-screen>
-				<credits-screen></credits-screen>
-				<load-screen></load-screen>
-				<save-screen></save-screen>
-				<settings-screen></settings-screen>
-				<help-screen></help-screen>
-			</visual-novel>
-		</div>
-	</body>
-
+                        </div>
+                    </div>
+                </div>
+            </article>
+           
+            <article id="game" style="margin:0 auto; display: flex; justify-content: center;">
+                <div id="includedContent"></div>
+            </article>
+            <article id="contact" class="card2 flex-container">
+                    <div class="double">
+                        <div class="big gap">Contact</div>
+                    <form action="mailto:annisaa.malik@gmail.com?subject=Wallflower Bloom Response" method="post" enctype="text/plain">
+                        <label for="fname">Name:</label>
+                        <input type="text" id="name" name="name" class="back">
+                        <br>
+                        <br>
+                        <label for="email">E-mail:</label>
+                        <input type="text" id="email" name="email" class="back">
+                        <br>
+                        <br>
+                        <label for="msg">Message:</label>
+                        <input type="textarea" id="msg" name="msg" class="back">
+                        <br>
+                        <br>
+                        <input type="submit" value="Sent">
+                    </form>
+                </div>
+                    <biodata class="box">
+                        <article class="profile card back">
+                            <header>
+                                <div class="big">Creator</div>
+                                    <img src="assets/image/s_sinn.jpg">
+                            </header>
+                            <section>
+                                <div class="big" style="font-size: 24px;">Annisa Aisyha Malik</div>
+                                <table style="border-spacing: 0px 10px;">
+                                    <tr>
+                                        <th class="author">Nama</th>
+                                        <td style="padding-left: 10px;">Annisa Aisyha Malik</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="author">e-mail</th>
+                                        <td style="padding-left: 10px;">annisaa.malik@gmail.com</td>
+                                    </tr>
+                                </table>
+                               
+                                    <div style="display: flex; justify-content: space-evenly; font-size: 50px; color: aquamarine;">
+                                            
+                                       <a href="https://www.linkedin.com/in/annisa-malik/" class="tooltip"><i class="fab fa-linkedin"></i><span class="tooltiptext">Linkedin</span></a>
+                                       <a href="https://github.com/annisamalik" class="tooltip"><i class="fab fa-github-square"></i><span class="tooltiptext">Github</span></a>
+                                        <a href="https://twitter.com/malikannisaa" class="tooltip"><i class="fab fa-instagram-square"></i><span class="tooltiptext">Instagram</span></a>
+                                        <a href="http://instagram.com/maliknns/" class="tooltip"><i class="fab fa-twitter-square"></i><span class="tooltiptext">Twitter</span></a>
+                                    </div>
+                            </section>
+                        </article>
+                    </biodata>
+           
+            </article>
+        </div>
+    </main>
+    <footer>
+        <p>Wallflower Bloom &#169; 2019 by Annisa Malik</p>
+    </footer>
+    <script src="assets/sub.js"></script>
+    <script type="text/javascript" src="demoNovel.js"></script>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </html>
