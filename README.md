@@ -20,5 +20,5 @@ You can edit it in assets/dialog.js , to find out more how to edit this and how 
 Visual Novel Javascript library : https://github.com/jdeisenberg/js-vine ( I use this to create the demo game ) <br>
 Background Image : https://k-after.at.webry.info/ <br>
 Sprite Image : http://tokudaya.net/index.html <br>
-Logo, Main Character, Illustration : Myself <br>
+Logo, Main Character, Illustration, GUI : Myself <br>
 
