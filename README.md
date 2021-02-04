@@ -1,6 +1,7 @@
 # Wallflower-Bloom
 A landing page of visual novel <br>
 
+![Wallflower Bloom](https://github.com/annisamalik/Wallflower-Bloom/blob/master/assets/image/logo.png?raw=true) <br>
 visit the link below to see how it look, <br>
 https://annisamalik.github.io/Wallflower-Bloom/ <br><br>
 
