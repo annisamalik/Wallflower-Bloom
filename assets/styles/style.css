@@ -5,6 +5,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 
+.descstory {
+    flex-basis: 40%; 
+    display: relative; 
+    transform: translate(25%, 50px); 
+    font-size: 16px;z-index: 4;font-family: 'Nanum Pen Script', cursive; font-size: 24px;
+}
+
+.imgstory {
+    flex-basis: 60%;display: relative; transform: translate(-10%, 0);
+}
+
 .game-feature {
     background-color: #ff00d4;
     width: 100px; height: 100px; text-align: center; display: flex; align-items: center; border-radius: 50%;
@@ -180,7 +191,9 @@ nav {
     position: sticky;
     top: 0;
     overflow: hidden;
-    z-index: 100;
+    z-index: 101;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav a {
@@ -197,7 +210,6 @@ nav .icon {
   }
 
 .judul {
-    float: left;
     font-size: 18px;
     font-weight: 400;
     text-decoration: none;
@@ -205,7 +217,7 @@ nav .icon {
 }
 
 nav ul {
-    float: right;
+    display: flex;
     
 }
 
@@ -214,7 +226,6 @@ nav a:hover {
 }
 
 nav li {
-    display: inline;
     list-style-type: none;
     margin-right: 20px;
     color: #ff00d4;
@@ -371,7 +382,7 @@ input[type=submit]:hover {
  .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 101; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -535,7 +546,12 @@ input[type=submit]:hover {
     top: -10%;
     right: 0;
     bottom: 0;
-    height: 110%
+    height: 110%;
+    background-image: url(../image/world/126224949387516216028_BG36a_80.jpg);
+    background-size: cover;
+    z-index: -1;
+    -webkit-filter: blur(5px) hue-rotate(70deg);
+    filter: blur(5px) hue-rotate(70deg);
 }
 .fs-world-bg-img
 {
@@ -543,7 +559,8 @@ input[type=submit]:hover {
     position: absolute;
     width: 110%;
     -webkit-filter: blur(5px) hue-rotate(70deg);
-    filter: blur(5px) hue-rotate(70deg)
+    filter: blur(5px) hue-rotate(70deg);
+    visibility: hidden;
 }
 .fs-container
 {
@@ -692,38 +709,55 @@ input[type=submit]:hover {
     .double{
         margin-right: 0;
     }
+    .descstory {
+        transform: translate(5%, 50px); 
+    }
+    .imgstory {
+        transform: translate(0%, -20%)
+    }
     
     
 }
 
 @media screen and (max-width: 880px) {
     
-
-    .none li {
-        display: none;
-    }
-    nav  button.icon {
-    float: right;
+input[type=submit]{
+    width: 100%;
+}
+.none ul {
+    display: none;
+}
+nav {
     display: block;
-  }
 
-  .none.responsive .icon {
+
+}
+nav  button.icon {
     position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .none.responsive ul li {
-   
-   float: left;
-   flex-direction: column;
+    margin: 0 ;
+    top: 17px;
+    z-index: 5;
+    display: block;
+    right:17px;
+}
+.none.responsive ul{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.none.responsive ul li {
     display:flex;
-    text-align: left;
-  }
-  .modal{
-      overflow: auto;
-  }
+    flex-direction: column;
+    padding-top: 10px;
 }
 
+.modal{
+    overflow: auto;
+}
+.fs-container{
+    min-width: 100vw;
+}
 
-    
+}
+
 

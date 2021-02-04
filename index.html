@@ -3,23 +3,22 @@
 
 <head>
     <title>Wallflower Bloom</title>
-    <link rel="stylesheet" href="assets/styles/style.css">
-    <link rel="stylesheet" href="assets/styles/css/all.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/novel.css">
+    <link rel="stylesheet" href="assets/styles/css/all.css">
+   
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-    <script> 
-        $(function(){
-          $("#includedContent").load("index.html"); 
-        });
-    </script> 
+    <script type="text/javascript" src="assets/js-vine.js"></script>
+    <script type="text/javascript" src="assets/dialog.js"></script>
 </head>
 
-<body>
+<body onload="initNovel()">
     <nav class="none">
-        <img src="assets/image/logo.png" style="height:60px; width:auto" class="judul" alt="sejarah" onclick="document.getElementsByClassName('top')[0].scrollIntoView()">
+        <img src="assets/image/logo.png" style="max-height:60px;" class="judul" alt="sejarah" onclick="document.getElementsByClassName('top')[0].scrollIntoView()">
         <ul>
             <li>
                 <a href="#story">Story</a>
@@ -37,14 +36,14 @@
                 <a href="#contact">Contact</a>
             </li>
             <li>
-                <button onclick="changeTheme()">
+                <button onclick="changeTheme()" style="min-width: 37px;">
                     <i class="fas fa-moon" style="color: #ff00d4;"></i>
                 </button>
             </li>
            
         </ul>
-        <button class="icon" onclick="showMenu()">
-            <i class="fa fa-bars"></i>
+        <button style="background-color: transparent;" class="icon" onclick="showMenu()">
+            <i class="fa fa-bars" style="font-size: 30px;"></i>
         </button>
     </nav>
     <header>
@@ -66,13 +65,13 @@
             <article id="story" class="card2">
                 <div class="big gap">Story</div>
                 <div class="flex-container">
-                    <p style="flex-basis: 40%; display: relative; transform: translate(25%, 50px); font-size: 16px;z-index: 4;font-family: 'Nanum Pen Script', cursive; font-size: 24px;">
+                    <p class="descstory">
                         Crissa is a recluse, most of her life has been spent avoiding people.</br>
                         </br>Waiting for situation to be better, years after years nothing absolutely change.
                     </p>
 
 
-                    <img src="assets/image/perpus.jpg" class="featured-image" style="flex-basis: 60%;display: relative; transform: translate(-10%, 0);">
+                    <img src="assets/image/perpus.jpg" class="featured-image imgstory">
                 </div>
                 <div>
                     <h3 style="margin: 50px 0;">What's in this game?</h3>
@@ -90,7 +89,7 @@
             <article id="back">
                 <div class="fs-section">
                     <div class="fs-container w-container">
-                        <div class="big gap" style="text-align: center; margin-left: 0; margin-right: 0; color: white;">
+                        <div class="big gap" style="z-index: 10;width: 100vw; max-width: 900px;text-align: center; margin-left: 0; margin-right: 0; color: white;">
                            Background
                         </div>
 
@@ -104,9 +103,8 @@
                             <div class="fs-world-img _8 modalbtn"></div>
                         
                     </div>
-                    <div class="fs-world-bg">
-                        <img src="./assets/image/world/126224949387516216028_BG36a_80.jpg" alt="" class="fs-world-bg-img">
-                    </div>
+                    <div class="fs-world-bg"></div>                     
+                    
                 </div>
                 <!-- Background Details -->
                 <div class="modal">
@@ -280,8 +278,18 @@
                 </div>
             </article>
            
-            <article id="game" style="margin:0 auto; display: flex; justify-content: center;">
-                <div id="includedContent"></div>
+            <article id="game" style="margin:0 auto; display: flex; justify-content: center;width: 100vw;min-height: 100vh;flex-direction: column;">
+                <div id="debug"></div>
+                <div id="novelDiv">
+                    <div style="position: absolute;left:0; top: 0; z-index:-1; width: 100%;">
+                        <img id="background0" src="assets/image/novel/empty.png" style="width: 100vw;">
+                    </div>
+                    <div style="position: absolute;left:0; top: 0; z-index:-1; width: 100%;">
+                        <img id="background1" src="assets/image/novel/empty.png">
+                    </div>
+                    <div id="dialogDiv" style="z-index:100">
+                    </div>
+                </div>
             </article>
             <article id="contact" class="card2 flex-container">
                     <div class="double">
@@ -338,8 +346,5 @@
     <footer>
         <p>Wallflower Bloom &#169; 2019 by Annisa Malik</p>
     </footer>
-    <script src="assets/sub.js"></script>
-    <script type="text/javascript" src="demoNovel.js"></script>
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-</html>
+    <script src="assets/main.js"></script>
+
