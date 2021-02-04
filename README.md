@@ -1,14 +1,5 @@
 # Wallflower-Bloom
 
-<<<<<<< HEAD
-
-A landing page of visual novel
-
-Credits
-Background Image : https://k-after.at.webry.info/
-Sprite Image : http://tokudaya.net/index.html
-Logo, Main Character, Illustration : Myself
-=======
 A landing page of visual novel <br>
 
 ![Wallflower Bloom](https://github.com/annisamalik/Wallflower-Bloom/blob/master/assets/image/logo.png?raw=true) <br>
@@ -32,5 +23,3 @@ Visual Novel Javascript library : https://github.com/jdeisenberg/js-vine ( I use
 Background Image : https://k-after.at.webry.info/ <br>
 Sprite Image : http://tokudaya.net/index.html <br>
 Logo, Main Character, Illustration, GUI : Myself <br>
-
-> > > > > > > 972d7d448a19f2fef9bb431e2f56c0fdaa249a38
